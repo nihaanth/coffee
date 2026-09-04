@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golden Paws Kennel | Hypoallergenic Labs &amp; Lab Mixes</title>
+  <meta name="description" content="Hypoallergenic full breed and half breed dogs, mostly Labradors and Lab mixes, priced from $600 to $1,500.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="#home" class="logo">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M12 13c-2.8 0-6 2.2-6 5 0 1.7 1.3 3 3 3 1.2 0 2-.6 3-.6s1.8.6 3 .6c1.7 0 3-1.3 3-3 0-2.8-3.2-5-6-5zm-6.5-2a2.2 2.5 0 1 0 0-5 2.2 2.5 0 1 0 0 5zm13 0a2.2 2.5 0 1 0 0-5 2.2 2.5 0 1 0 0 5zM9 8.5a2.2 2.8 0 1 0 0-5.6 2.2 2.8 0 1 0 0 5.6zm6 0a2.2 2.8 0 1 0 0-5.6 2.2 2.8 0 1 0 0 5.6z"/></svg>
+      </span>
+      Golden Paws Kennel
+    </a>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#breeds">Full vs Half Breed</a>
+      <a href="#dogs">Available Dogs</a>
+      <a href="#why">Why Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menu-btn" aria-label="Toggle menu">&#9776;</button>
+  </header>
+
+  <!-- HOME -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <span class="eyebrow">Hypoallergenic &bull; Family Raised &bull; Health Guaranteed</span>
+      <h1>Hypoallergenic Labs &amp; Lab Mixes, <span>$600 to $1,500</span></h1>
+      <p>
+        Every dog we place is hypoallergenic, vet-checked, and raised in our home.
+        Most of our puppies are Labradors or Labrador mixes. Choose a <strong>full breed</strong>
+        for predictable looks and temperament, or a <strong>half breed</strong> for a friendly,
+        budget-friendly companion.
+      </p>
+      <div class="home-actions">
+        <a href="#dogs" class="btn">See Available Dogs</a>
+        <a href="#breeds" class="btn btn-outline">Full vs Half Breed</a>
+      </div>
+      <ul class="home-stats">
+        <li><strong>12</strong><span>dogs available</span></li>
+        <li><strong>100%</strong><span>hypoallergenic</span></li>
+        <li><strong>$600+</strong><span>starting price</span></li>
+      </ul>
+    </div>
+    <div class="home-art" aria-hidden="true">
+      <div class="art-card art-card-1">
+        <svg viewBox="0 0 120 120" class="dog-svg"><use href="#dog-icon"/></svg>
+        <p>Yellow Lab</p>
+      </div>
+      <div class="art-card art-card-2">
+        <svg viewBox="0 0 120 120" class="dog-svg"><use href="#dog-icon"/></svg>
+        <p>Labradoodle</p>
+      </div>
+      <div class="art-card art-card-3">
+        <svg viewBox="0 0 120 120" class="dog-svg"><use href="#dog-icon"/></svg>
+        <p>Chocolate Lab</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FULL VS HALF BREED -->
+  <section class="breeds" id="breeds">
+    <h2 class="heading">Full Breed <span>vs</span> Half Breed</h2>
+    <p class="sub-heading">Both are hypoallergenic. Both are wonderful. Here is how to pick.</p>
+    <div class="breeds-grid">
+      <article class="breed-card">
+        <span class="badge badge-full">Full Breed</span>
+        <h3>Purebred Labradors &amp; Companions</h3>
+        <p class="price-range">$1,150 &ndash; $1,500</p>
+        <ul>
+          <li>Both parents are registered purebreds of the same breed.</li>
+          <li>Predictable size, coat color, and temperament.</li>
+          <li>Pedigree papers and lineage records included.</li>
+          <li>Ideal for shows, breeding programs, or buyers who want a known standard.</li>
+        </ul>
+        <a href="#dogs" class="btn btn-small" data-filter-link="full">Browse Full Breeds</a>
+      </article>
+      <article class="breed-card">
+        <span class="badge badge-half">Half Breed</span>
+        <h3>Lab Mixes &amp; Designer Crosses</h3>
+        <p class="price-range">$600 &ndash; $1,100</p>
+        <ul>
+          <li>One Labrador parent crossed with another hypoallergenic breed.</li>
+          <li>Often healthier thanks to a wider gene pool.</li>
+          <li>Unique looks, gentle Lab personality, lower price.</li>
+          <li>Perfect for families, first-time owners, and allergy sufferers.</li>
+        </ul>
+        <a href="#dogs" class="btn btn-small" data-filter-link="half">Browse Half Breeds</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- AVAILABLE DOGS -->
+  <section class="dogs" id="dogs">
+    <h2 class="heading">Available <span>Dogs</span></h2>
+    <p class="sub-heading">All hypoallergenic. Prices from $600 to $1,500. Most are Labradors or Lab mixes.</p>
+
+    <div class="filters">
+      <div class="filter-group" role="group" aria-label="Breed type">
+        <button class="filter-btn active" data-type="all">All</button>
+        <button class="filter-btn" data-type="full">Full Breed</button>
+        <button class="filter-btn" data-type="half">Half Breed</button>
+        <button class="filter-btn" data-type="lab">Labs Only</button>
+      </div>
+      <div class="filter-group">
+        <label for="max-price">Max price: <strong id="max-price-label">$1,500</strong></label>
+        <input type="range" id="max-price" min="600" max="1500" step="50" value="1500">
+      </div>
+      <div class="filter-group">
+        <label for="sort">Sort</label>
+        <select id="sort">
+          <option value="featured">Featured</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="name">Name: A to Z</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="dog-grid" id="dog-grid"></div>
+    <p class="empty" id="empty" hidden>No dogs match those filters. Try raising the max price.</p>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why" id="why">
+    <h2 class="heading">Why <span>Golden Paws</span></h2>
+    <div class="why-grid">
+      <div class="why-card">
+        <span class="why-icon">&#127807;</span>
+        <h3>All Hypoallergenic</h3>
+        <p>Every dog on this site is hypoallergenic, so allergy-prone families can finally bring a dog home.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-icon">&#129657;</span>
+        <h3>Vet Checked</h3>
+        <p>First vaccinations, deworming, microchip, and a full health exam before pickup.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-icon">&#127968;</span>
+        <h3>Home Raised</h3>
+        <p>Our Labs and Lab mixes grow up around kids and other pets, so they arrive socialized.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-icon">&#128176;</span>
+        <h3>Honest Pricing</h3>
+        <p>Half breeds start at $600, full breeds top out at $1,500. No hidden fees, ever.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2 class="heading">Reserve a <span>Puppy</span></h2>
+    <p class="sub-heading">Tell us which dog caught your eye and we will get back within 24 hours.</p>
+    <form class="contact-form" id="contact-form">
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Email address" required>
+      </div>
+      <div class="form-row">
+        <input type="tel" name="phone" placeholder="Phone (optional)">
+        <select name="dog" id="dog-select" required>
+          <option value="">Which dog are you interested in?</option>
+        </select>
+      </div>
+      <textarea name="message" rows="4" placeholder="Anything we should know? Allergies in the home, other pets, kids..."></textarea>
+      <button type="submit" class="btn">Send Inquiry</button>
+      <p class="form-note" id="form-note" hidden>Thanks! Your inquiry has been noted. We will be in touch soon.</p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-cols">
+      <div>
+        <h4>Golden Paws Kennel</h4>
+        <p>Hypoallergenic Labradors and Lab mixes, full breed and half breed, from $600 to $1,500.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#breeds">Full vs Half Breed</a>
+        <a href="#dogs">Available Dogs</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Visit Us</h4>
+        <p>123 Kennel Lane<br>Springfield, USA</p>
+        <p>Mon &ndash; Sat, 9am &ndash; 6pm</p>
+      </div>
+    </div>
+    <p class="credit">&copy; 2026 Golden Paws Kennel. All dogs are hypoallergenic and come with a health guarantee.</p>
+  </footer>
+
+  <!-- Shared dog icon -->
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      <symbol id="dog-icon" viewBox="0 0 120 120">
+        <ellipse cx="60" cy="72" rx="30" ry="26" fill="currentColor"/>
+        <ellipse cx="35" cy="48" rx="11" ry="20" fill="currentColor" transform="rotate(-15 35 48)"/>
+        <ellipse cx="85" cy="48" rx="11" ry="20" fill="currentColor" transform="rotate(15 85 48)"/>
+        <circle cx="60" cy="50" r="24" fill="currentColor"/>
+        <ellipse cx="60" cy="66" rx="14" ry="10" fill="#fff" opacity=".85"/>
+        <circle cx="50" cy="48" r="3.5" fill="#1f1a17"/>
+        <circle cx="70" cy="48" r="3.5" fill="#1f1a17"/>
+        <ellipse cx="60" cy="61" rx="5" ry="3.5" fill="#1f1a17"/>
+        <path d="M60 64 v5 M55 71 q5 4 10 0" stroke="#1f1a17" stroke-width="2" fill="none" stroke-linecap="round"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <script src="script.js"></script>
+</body>
+</html>
